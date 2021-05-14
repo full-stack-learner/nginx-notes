@@ -735,9 +735,32 @@ http {
     }
 }
 
+Read more - https://stackoverflow.com/questions/30860516/only-allow-certain-countries-traffic-access-specific-page
 
+"The following .htaccess will only allow traffic from the US, Canada and Mexico"
 
+GeoIPEnable On
+# Put countries to allow here
+SetEnvIf GEOIP_COUNTRY_CODE US AllowCountry  
+SetEnvIf GEOIP_COUNTRY_CODE CA AllowCountry  
+SetEnvIf GEOIP_COUNTRY_CODE MX AllowCountry  
+  
+Deny from all  
+Allow from env=AllowCountry   
 
+"The following .htaccess will Deny traffic from China, North Korea, South Korea"
+
+GeoIPEnable On
+# Put countries to deny here      
+SetEnvIf GEOIP_COUNTRY_CODE CN DenyCountry  
+SetEnvIf GEOIP_COUNTRY_CODE KR DenyCountry  
+SetEnvIf GEOIP_COUNTRY_CODE KP DenyCountry  
+  
+Allow from all  
+Deny from env=DenyCountry
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 
 
 
