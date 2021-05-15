@@ -762,7 +762,26 @@ Deny from env=DenyCountry
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 
+"Installing nginx from source on ubuntu"
 
+https://devopscraft.com/how-to-compile-nginx-from-source-on-ubuntu-20-04/
+
+"Installing and Configuring Web App Firewall - Naxsi on Nginx"
+
+https://kifarunix.com/install-and-configure-naxsi-nginx-waf-on-ubuntu-18-04-lts/
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+"HTTPS"
+
+"Crytography Module"
+
+"SSL"
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-18-04
+
+https://medium.com/@munteanu210/how-to-install-an-ssl-certificate-on-nginx-b1dd39a4628d
 
 
 
